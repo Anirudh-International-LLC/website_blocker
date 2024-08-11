@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an extension to block websites or webpages in your computer.">
+    <meta name="keywords" content="blocker, website blocker">
+    <meta name="author" content="Anirudh International LLC">
+    <title>Block a URL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 180px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px; /* Adjusted width for popup */
+            width: 100%;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 10px; /* Reduced margin */
+            font-size: 18px; /* Slightly smaller font for popup */
+        }
+        p {
+            font-size: 14px; /* Slightly smaller font */
+            margin-bottom: 10px; /* Reduced margin */
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px; /* Reduced margin */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px; /* Slightly smaller font */
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px; /* Slightly smaller font */
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #responseMessage {
+            margin-top: 10px;
+            font-size: 14px; /* Slightly smaller font */
+            color: #4CAF50;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #008CBA;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px; /* Slightly smaller font */
+            transition: background-color 0.3s ease;
+        }
+        a.button:hover {
+            background-color: #007B9A;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Block a URL</h1>
+        <p>This extension blocks whatever URL you input</p>
+        <input type="text" id="URL" placeholder="Enter URL you hate">
+        <button id="submitButton">Submit</button>
+        <p id="responseMessage"></p>
+        <a href="unblock.html" class="button">Show blocked!</a>
+    </div>
+</body>
+</html>
