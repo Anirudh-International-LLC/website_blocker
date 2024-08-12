@@ -11,7 +11,7 @@ This is a chrome extension made to block any websites or URLs that the user want
 
 # Extension link on Google
 
-*Pending Review by google, once complete, [INSERT HERE]*
+https://chrome.google.com/webstore/detail/faonkedfcdefenjeflnmneopnngpmbmf
 
 
 # How it works
