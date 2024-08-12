@@ -23,13 +23,16 @@ function buttonclick(inputElement){
         if (index !== -1) {
             // Remove the URL from the array
             hatedURLs.splice(index, 1);
-            chrome.storage.local.set({'bannedURL': hatedURLs});}
+            chrome.storage.local.set({'bannedURL': hatedURLs});
+            inputElement.value = '';
+            document.location.href='popup.html';
+            console.log(hatedURLs);}
 
-        // Clear the input field
-        inputElement.value = '';
+        else{
+            alert("URL not found in the list");
+            inputElement.value = '';
+        }
 
-        // Log the updated array
-        console.log(hatedURLs);
-        document.location.href='popup.html';
+        
     });
 };
