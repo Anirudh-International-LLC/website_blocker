@@ -1,31 +1,32 @@
 {
-  "manifest_version": 3,
-  "name": "Website Blocker",
-  "version": "2.0",
-  "description": "To help users break free from websites they want to avoid but find difficult to stop visiting, this extension introduces deliberate friction and barriers. By making access to these sites more challenging and mentally taxing, the extension aims to disrupt compulsive behaviors and encourage healthier online habits.",
-  "permissions": [
-    "storage",
-    "tabs"
-  ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "BLOCKER.png"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "popup.html",
-        "BLOCKER.png",
-        "background.js",
-        "showblocked.js",
-        "wait.html",
-        "unblock.html",
+    "manifest_version": 3,
+    "name": "Website Blocker",
+    "version": "2.0",
+    "description": "",
+    "permissions": [
+      "storage",
+      "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "BLOCKER.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "popup.html",
+          "BLOCKER.png",
+          "background.js",
+                  "showblocked.js",
+                  "wait.html",
+                  "unblock.html",
         "popup.js"
-      ],
-      "matches": ["<all_urls>"]
-    }
-  ]
-}
+        ],
+        "matches": ["<all_urls>"]
+    
+      }
+    ]
+  }
