@@ -20,4 +20,4 @@ A customizable timer that will prevent you from accessing the unblock url's tab 
 
 # CRX Download Here.
 
-You can directly use this extension by downloading the crx file, it is in the download folder
+You can directly use this extension by downloading the crx file.
