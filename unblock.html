@@ -77,12 +77,26 @@
         a.button:hover {
             background-color: #007B9A;
         }
+        .blocked-urls {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #ff0000; /* Red color to indicate blocked URLs */
+    background-color: #f8d7da; /* Light red background for emphasis */
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+    margin: 20px 0;
+    word-wrap: break-word; /* Ensure long URLs break to the next line */
+}
+
     </style>
     <script src="showblocked.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Unblock a URL</h1>
+        <p class="blocked-urls">List of blocked URLs</p>
         <p id="blocked"></p>
         <p>Insert name in the tag below if you want to unblock any URLs</p>
         <input type="text" id="URL" placeholder="Enter URL you no longer hate">

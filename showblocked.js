@@ -30,5 +30,6 @@ function buttonclick(inputElement){
 
         // Log the updated array
         console.log(hatedURLs);
+        document.location.href='popup.html';
     });
 };

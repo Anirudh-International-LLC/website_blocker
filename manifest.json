@@ -1,10 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "blocker",
-    "version": "1.0",
-    "description": "This is a simple Chrome extension.",
+    "name": "Website Blocker",
+    "version": "2.0",
+    "description": "To help users break free from websites they want to avoid but find difficult to stop visiting, this extension introduces deliberate friction and barriers. By making access to these sites more challenging and mentally taxing, the extension aims to disrupt compulsive behaviors and encourage healthier online habits.",
     "permissions": [
-      "activeTab",
       "storage",
       "tabs"
     ],
@@ -22,9 +21,12 @@
           "BLOCKER.png",
           "background.js",
                   "showblocked.js",
+                  "wait.html",
+                  "unblock.html",
         "popup.js"
         ],
         "matches": ["<all_urls>"]
+    
       }
     ]
   }
