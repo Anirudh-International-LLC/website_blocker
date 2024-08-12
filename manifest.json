@@ -1,32 +1,36 @@
 {
-    "manifest_version": 3,
-    "name": "Website Blocker",
-    "version": "2.0",
-    "description": "",
-    "permissions": [
-      "storage",
-      "tabs"
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "BLOCKER.png"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "web_accessible_resources": [
-      {
-        "resources": [
-          "popup.html",
-          "BLOCKER.png",
-          "background.js",
-                  "showblocked.js",
-                  "wait.html",
-                  "unblock.html",
-        "popup.js"
-        ],
-        "matches": ["<all_urls>"]
-    
-      }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "Website Blocker",
+  "version": "2.0",
+  "description": "",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": "images/BLOCKER.png"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "html/change.html",
+        "html/popup.html",
+        "html/unblock.html",
+        "html/wait.html",
+        "css/change.css",
+        "css/popup.css",
+        "css/unblock.css",
+        "css/wait.css",
+        "js/popup.js",
+        "js/showblocked.js",
+        "js/timeer.js",
+        "js/updatetime.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
